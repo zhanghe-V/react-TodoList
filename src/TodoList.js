@@ -5,7 +5,9 @@ import store from './store'
 import {
   getInputChangeAction,
   getAddItemAction,
-  getDeleteItemAction
+  getDeleteItemAction,
+  // getTodoList
+  getInitList
 } from './store/actionCreators'
 
 class TodoList extends Component {
@@ -33,7 +35,15 @@ class TodoList extends Component {
   }
 
   componentDidMount() {
+    // setTimeout(() => {
+    //   const action = getListItemAction(['aaa', 'fff', 'eee'])
+    //   store.dispatch(action)
+    // }, 2000)
+
+    // const action = getTodoList() // redux-thunk
     
+    const action = getInitList()
+    store.dispatch(action)
   }
 
   handleInput(e) {

@@ -22,3 +22,14 @@ react性能优化：
 ## 无状态组件（函数式）
 - 性能较高，原因：普通组件继承Component，其中有生命周期函数和render，远比无状态组件多
 
+## redux中间件：
+- 中间指的是 `action` 和 `store` 之间, 对 `diapatch` 方法进行封装升级完成一定功能。
+
+> redux-thunk 采用的思想是 把异步操作放在 action 里面去操作
+> 而 redux-saga 把异步操作拆分出来 放在单独的文件中去管理
+
+++ redux-thunk 中间件： 它使得我们可以在 action 中写异步(actionCreator 可以返回函数，否则只能返回对象。)
+1. 安装 `npm i redux-thunk -S`
+2. 使用 用`enhancer`方式使用
+
+++ redux-saga 中间件：
