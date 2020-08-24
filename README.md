@@ -33,3 +33,11 @@ react性能优化：
 2. 使用 用`enhancer`方式使用
 
 ++ redux-saga 中间件：
+1. 安装 `npm i redux-saga -S`
+2. 创建sagas文件在里面完成逻辑
+
+## react-redux:
+* 核心API：
+- 1. Provider 连接store, 内部组件都可以获取到store中内容
+- 2. connect 组件和store做连接
+- 3. 
